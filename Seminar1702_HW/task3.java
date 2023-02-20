@@ -10,9 +10,9 @@ public class task3 {
 
         ArrayList<Integer> nums = randomList(10, 15);
         System.out.printf("Исходный список: %s\n", nums.toString());
-
-        System.out.printf("Минимальное значение: %d\n", minItem(nums));
-        System.out.printf("Максимальное значение: %d\n", maxItem(nums));
+        // Collection.sort(nums);
+        System.out.printf("Минимальное значение: %d\n", minItem(nums));  // min = nums.get(0);
+        System.out.printf("Максимальное значение: %d\n", maxItem(nums));    // max = nums.get(num(size - 1));
         System.out.printf("Среднее арифметическое: %.2f\n", averageValue(nums));
     }
 
