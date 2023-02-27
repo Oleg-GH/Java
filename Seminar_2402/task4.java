@@ -23,8 +23,8 @@ public class task4 {
             "Пора красавица проснись.\n");
     }
 
-    static void ex1(String s) {
-        Map<Integer, List<String>> treeMap = new TreeMap<>();
+    static void ex1(String s) {                                 // если хотим по убыванию, то в скобках пишем
+        Map<Integer, List<String>> treeMap = new TreeMap<>();   // (Collections.reverseOrder())
         String[] s1 = s.split("\n");
         for (String s2: s1) {
             if (treeMap.containsKey(s2.length())) {
@@ -37,14 +37,23 @@ public class task4 {
             }
         }
         System.out.println(treeMap);  // выводим отсортированный по длине строк treeMap
+        // {1=[a], 24=[Пора красавица проснись.], 28=[Мороз и солнце день чудесный], 31=[Еще ты дремлешь друг прелестный, Еще ты дремлешь день прелестный]}  
+        // Если хотим вывести ответ в столбик, то
+        for (Map.Entry entry: treeMap.entrySet()){
+            System.out.println(entry);    // тогда выводится в таком виде:
+            // 1=[a]
+            // 24=[Пора красавица проснись.]
+            // 28=[Мороз и солнце день чудесный]
+            // 31=[Еще ты дремлешь друг прелестный, Еще ты дремлешь день прелестный]
+        }
     }
 
     // static void ex1(String s) {
     //     Map<Integer, List<String>> treeMap = new TreeMap<>(new Comparator<Integer>()) {
     //         @Override
-    //         public int compare(Integer o1, Integer o2) {
-    //             return Integer.compare(01, 02);
-    //         }
+    //         public int compare(Integer o1, Integer o2) {     // возвращает положит. число, если о1 > о2
+    //             return Integer.compare(01, 02);              // отриц.число, если <, и 0, если равны
+    //         }  // по последнему числу: (о1%10, о2%10);
     //     };
     //     String[] s1 = s.split("\n");
     //     for (String s2: s1) {
