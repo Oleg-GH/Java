@@ -1,7 +1,7 @@
 package SeminarOOP0303_HW;
 
 public class Bread extends Foods{
-    String flourType;
+    protected String flourType;
 
     public Bread(String name, Integer price, Integer quantity, String unit, String keepingTiime, String flourType) {
         super(name, price, quantity, unit, keepingTiime);

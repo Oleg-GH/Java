@@ -1,7 +1,7 @@
 package SeminarOOP0303_HW;
 
 public class Foods extends Goods{
-    String keepingTime;
+    protected String keepingTime;
 
     public Foods(String name, Integer price, Integer quantity, String unit, String keepingTime) {
         super(name, price, quantity, unit);

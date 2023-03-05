@@ -1,7 +1,7 @@
 package SeminarOOP0303_HW;
 
 public class Hygiene extends Goods{
-    Integer qtyInBox;
+    protected Integer qtyInBox;
 
     public Hygiene(String name, Integer price, Integer quantity, String unit, Integer qtyInBox) {
         super(name, price, quantity, unit);

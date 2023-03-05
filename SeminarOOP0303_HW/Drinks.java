@@ -1,7 +1,7 @@
 package SeminarOOP0303_HW;
 
 public class Drinks extends Goods{
-    String volume;
+    protected String volume;
     
     public Drinks(String name, Integer price, Integer quantity, String unit, String volume) {
         super(name, price, quantity, unit);

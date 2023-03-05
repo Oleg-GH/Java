@@ -1,11 +1,11 @@
 package SeminarOOP0303_HW;
 
 public class Milk extends Foods{
-    String volume;
-    String fat;
-    //String keepingTime;
-
-    public Milk(String name, Integer price, Integer quantity, String unit, String keepingTime, String volume, String fat) {
+    protected String volume;
+    protected String fat;
+    
+    public Milk(String name, Integer price, Integer quantity, String unit, String keepingTime, 
+                String volume, String fat) {
         super(name, price, quantity, unit, keepingTime);
         this.volume = volume;
         this.fat = fat;

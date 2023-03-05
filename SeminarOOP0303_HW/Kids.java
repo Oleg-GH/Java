@@ -1,8 +1,8 @@
 package SeminarOOP0303_HW;
 
 public class Kids extends Goods {
-    Integer minAge;
-    String allergen;
+    protected Integer minAge;
+    protected String allergen;
 
     public Kids(String name, Integer price, Integer quantity, String unit, Integer minAge, String allergen) {
         super(name, price, quantity, unit);

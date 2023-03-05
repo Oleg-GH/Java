@@ -1,10 +1,10 @@
 package SeminarOOP0303_HW;
 
 public class Goods {
-    String name;
-    Integer price;
-    Integer quantity;
-    String unit;
+    protected String name;
+    protected Integer price;
+    protected Integer quantity;
+    protected String unit;
 
     public Goods(String name, Integer price, Integer quantity, String unit) {
         this.name = name;
@@ -13,8 +13,8 @@ public class Goods {
         this.unit = unit;
     }
 
-    public Goods() {
-    }
+    //public Goods() {
+    //}
     
     @Override
     public String toString() {

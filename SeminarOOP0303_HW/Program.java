@@ -61,7 +61,7 @@ public class Program {
                 
         Pacifier pacifier = new Pacifier("Соска детская", 520, 1, "шт", 
                 1, "hypoallergenic");
-        Kids bear = new Kids("Игрушка мягкая Мишка", 1500, 2, "шт",
+        Kids bear = new Kids("Игрушка мягкая 'Мишка'", 1500, 2, "шт",
                 3, "Allergenic");
 
         ArrayList<Goods> spec= new ArrayList<>();
