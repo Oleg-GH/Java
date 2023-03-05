@@ -10,10 +10,6 @@ public class Paper extends Hygiene {
     
     @Override
     public String toString() {
-        return "Туалетная бумага '" + name + '\'' +
-                ", цена: " + price + " ₽" +
-                ", колличество: " + quantity + " " + unit +
-                ", количество в упаковке: " + qtyInBox +
-                ", слоев: " + layer;
+        return super.toString() + ", слоев: " + layer;
     }
 }

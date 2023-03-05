@@ -9,7 +9,7 @@ public class Milk extends Foods{
         super(name, price, quantity, unit, keepingTime);
         this.volume = volume;
         this.fat = fat;
-        //this.keepingTime = keepingTime;
+        
     }
     
     @Override
@@ -18,4 +18,4 @@ public class Milk extends Foods{
     }
 }
 
-// + "', keepingTime='" + this.keepingTime 
+

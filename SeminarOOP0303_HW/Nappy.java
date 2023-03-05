@@ -1,10 +1,10 @@
 package SeminarOOP0303_HW;
 
 public class Nappy extends Hygiene {
-    protected Integer size;
-    protected Integer minWeight;
-    protected Integer maxWeight;
-    protected String type;
+    private Integer size;
+    private Integer minWeight;
+    private Integer maxWeight;
+    private String type;
 
     public Nappy(String name, Integer price, Integer quantity, String unit, Integer qtyInBox,
                  Integer size, Integer minWeight, Integer maxWeight, String type) {
